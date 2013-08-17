@@ -1,0 +1,294 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_agenda_view"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainAgendaActivity" >
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:padding="0dp"
+            android:weightSum="3" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="0dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:text="@string/time_8h" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:gravity="center"
+                    android:text="@string/time_9h" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="120dp"
+                    android:gravity="center"
+                    android:text="@string/time_10h" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="180dp"
+                    android:gravity="center"
+                    android:text="@string/time_11h" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="240dp"
+                    android:gravity="center"
+                    android:text="@string/time_12h" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="300dp"
+                    android:gravity="center"
+                    android:text="@string/time_13h" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="360dp"
+                    android:gravity="center"
+                    android:text="@string/time_14h" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="420dp"
+                    android:gravity="center"
+                    android:text="@string/time_15h" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="480dp"
+                    android:gravity="center"
+                    android:text="@string/time_16h" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="540dp"
+                    android:gravity="center"
+                    android:text="@string/time_17h" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="600dp"
+                    android:gravity="center"
+                    android:text="@string/time_18h" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="660dp"
+                    android:gravity="center"
+                    android:text="@string/time_19h" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="720dp"
+                    android:gravity="center"
+                    android:text="@string/time_20h" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="780dp"
+                    android:gravity="center"
+                    android:text="@string/time_21h" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="840dp"
+                    android:gravity="center"
+                    android:text="@string/time_22h" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="900dp"
+                    android:gravity="center"
+                    android:text="@string/time_23h" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="960dp"
+                    android:gravity="center"
+                    android:text="@string/time_24h" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/agenda"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:paddingLeft="4dp" >
+
+                <!--
+                <RelativeLayout
+                    android:id="@+id/relativeLayout4"
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="180dp"
+                        android:layout_marginTop="180dp"
+                        android:background="#00f" />
+
+                    <Button
+                        android:id="@+id/button1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="180dp"
+                        android:layout_marginTop="180dp"
+                        android:text="Some Event" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout5"
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent" >
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="60dp"
+                        android:background="#00f" />
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="60dp"
+                        android:text="Some Event" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="210dp"
+                        android:background="#00f" />
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="210dp"
+                        android:text="Some Event" />
+                </RelativeLayout>
+
+                
+                <RelativeLayout
+                    android:id="@+id/relativeLayout4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="180dp"
+                        android:background="#00f" />
+
+                    <Button
+                        android:id="@+id/button1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="180dp"
+                        android:text="ouh rapa" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="180dp"
+                        android:layout_marginTop="180dp"
+                        android:background="#00f" />
+
+                    <Button
+                        android:id="@+id/button1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="180dp"
+                        android:layout_marginTop="180dp"
+                        android:text="Some Event" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="180dp"
+                        android:layout_marginTop="180dp"
+                        android:background="#00f" />
+
+                    <Button
+                        android:id="@+id/button1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="180dp"
+                        android:layout_marginTop="180dp"
+                        android:text="Some Event" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="180dp"
+                        android:layout_marginTop="180dp"
+                        android:background="#00f" />
+
+                    <Button
+                        android:id="@+id/button1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="180dp"
+                        android:layout_marginTop="180dp"
+                        android:text="Some Event" />
+                     </RelativeLayout>
+                -->
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</ScrollView>

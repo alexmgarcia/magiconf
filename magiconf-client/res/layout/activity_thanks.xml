@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ThanksActivity" >
+
+    <TextView
+        	android:id="@+id/introd"
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:layout_centerHorizontal="true"
+	        android:text="@+string/introd" 
+	        style="@android:style/TextAppearance.Medium"/>
+   
+    <ListView
+        android:id="@+id/persons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/introd"
+        android:layout_below="@+id/introd" />
+
+</RelativeLayout>

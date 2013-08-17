@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".StartContactExchangeActivity" >
+
+    <TextView
+        android:id="@+id/contact_exchange_started_label"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="22dp"
+        android:text="@string/contact_exchange_started_label" />
+
+    <TextView
+        android:id="@+id/pin_label"
+        style="@android:style/TextAppearance.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contact_exchange_started_label"
+        android:gravity="center"
+        android:paddingTop="44dp"
+        android:text="@string/pin"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pin"
+        style="@android:style/TextAppearance.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pin_label"
+        android:gravity="center"
+        android:paddingBottom="44dp"
+        android:paddingTop="4.4dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pin"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/finish_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/finish" />
+    </RelativeLayout>
+
+</RelativeLayout>

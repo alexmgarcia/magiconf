@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:gravity="center|center_vertical"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/user_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/actionBarLogo"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:src="@drawable/ic_action_user" />
+
+    <!-- android:layout_height="10dp" -->
+
+    <TextView
+        android:id="@+id/actionbar_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/user_logo"
+        android:gravity="right"
+        android:paddingRight="5dp"
+        android:text="@string/email_hint"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+	
+    <TextView
+        android:id="@+id/actionbar_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@id/actionBarLogo"
+        android:gravity="center"
+        android:paddingRight="6dp"
+        android:text="@string/app_name"
+        android:textSize="22sp" />
+    
+    <ImageView
+        android:id="@+id/actionBarLogo"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:paddingRight="4dp"
+        android:layout_toRightOf="@id/actionbar_user_name"
+        android:src="@drawable/small_logo" />
+
+    
+
+    <ImageView
+        android:id="@+id/actionbar_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="5dp"
+        android:paddingRight="8dp"
+        android:src="@drawable/search" />
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".EventActivity" >
+
+    <TextView
+        android:id="@+id/event_name"
+        style="@android:style/TextAppearance.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/in_agenda_label"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/event_name"
+        android:paddingTop="22dp"
+        android:text="@string/in_agenda"
+        android:textStyle="bold" />
+    
+    <Switch
+        android:id="@+id/in_agenda_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/in_agenda_label"
+        android:layout_marginLeft="13.2dp"
+        android:paddingTop="22dp"
+        android:typeface ="serif"
+        android:textOff="O"
+        android:textOn="I" />
+
+    <TextView
+        android:id="@+id/time_label"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/in_agenda_label"
+        android:paddingTop="13.2dp"
+        android:text="@string/time_label"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/time"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/in_agenda_label"
+        android:layout_toRightOf="@id/time_label"
+        android:paddingLeft="4.4dp"
+        android:paddingTop="13.2dp"
+        android:text="@string/time" />
+
+    <TextView
+        android:id="@+id/place_label"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time_label"
+        android:paddingTop="13.2dp"
+        android:text="@string/place_label"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/place"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time_label"
+        android:layout_toRightOf="@id/place_label"
+        android:paddingLeft="4.4dp"
+        android:paddingTop="13.2dp"
+        android:text="@string/place" />
+
+    
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<resources>
+
+    <string name="title_activity_login">MagiConf</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_username">Nome de Utilizador</string>
+    <string name="prompt_password">Palavra-passe</string>
+    <string name="action_sign_in_register">Login</string>
+    <string name="action_sign_in_short">Entrar</string>
+    <string name="action_forgot_password">Recuperar Palavra-passe</string>
+    <string name="login_progress_signing_in">A autenticar&#8230;</string>
+    <string name="login_progress_downloading">A obter dados&#8230;</string>
+    <string name="error_invalid_username">Nome de Utilizador inválido</string>
+    <string name="error_invalid_password">A Palavra-passe é muito pequena</string>
+    <string name="error_incorrect_password">Palavra-passe incorrecta</string>
+    <string name="error_field_required">Este campo é obrigatório</string>
+    <string name="login_logo_description">MagiConf Logo</string>
+    <string name="login_forgot_password_text"><u>Esqueci-me da Palavra-passe</u></string>
+    <string name="email_hint">Email</string>
+    <string name="cancel">Cancelar</string>
+    <string name="confirm">Confirmar</string>
+    <string name="login_dialog_title">Por favor introduza o seu e-mail</string>
+    <string name="check_internet">Não existe nenhuma ligação à internet disponível.\nVerifique a sua ligação e tente novamente</string>
+    <string name="error">Erro</string>
+    <string name="logout_question">Fazer Logout?</string>
+    <string name="confirm_logout">Tem a certeza que pretende fazer Logout?</string>
+    <string name="confirm_logout_button">Sim</string>
+    <string name="cancel_logout_button">Não</string>
+    <string name="pw_reset_email_sent">Foi enviado um e-mail com instruções para repor a sua Palavra-Passe</string>
+    <string name="invalid_email">E-mail inválido</string>
+
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".RestaurantActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/photo" />
+
+        <TextView
+            android:id="@+id/local_label"
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/photo"
+            android:paddingTop="4.4dp"
+            android:text="@string/local_label"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/local"
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/local_label"
+            android:paddingLeft="4.4dp"
+            android:paddingTop="4.4dp"
+            android:text="@string/local" />
+
+        <TextView
+            android:id="@+id/contact_label"
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/local"
+            android:paddingTop="4.4dp"
+            android:text="@string/contact_label"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/contact_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/local"
+            android:layout_toRightOf="@id/contact_label" >
+
+            <ImageView
+                android:id="@+id/restaurant_contact_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="4.4dp"
+                android:src="@drawable/device_call" />
+
+            <TextView
+                android:id="@+id/contact"
+                style="@android:style/TextAppearance.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/restaurant_contact_image"
+                android:paddingLeft="4.4dp"
+                android:paddingTop="4.4dp"
+                android:text="" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/gps_label"
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contact_layout"
+            android:paddingTop="4.4dp"
+            android:text="@string/gps_label"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/gps_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gps_label" >
+
+            <ImageView
+                android:id="@+id/restaurant_gps_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gps_label"
+                android:paddingLeft="4.4dp"
+                android:src="@drawable/map" />
+
+            <TextView
+                android:id="@+id/gps"
+                style="@android:style/TextAppearance.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/restaurant_gps_image"
+                android:paddingLeft="4.4dp"
+                android:text="" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/description_label"
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gps_layout"
+            android:paddingTop="4.4dp"
+            android:text="@string/description_label"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/description"
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/description_label"
+            android:paddingTop="4.4dp"
+            android:text="@string/description" />
+    </RelativeLayout>
+
+</ScrollView>

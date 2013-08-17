@@ -1,0 +1,7 @@
+{% if status == 0 %}
+    <h2>Contact Exchange Confirmed. Login in your application to see your new Contact or check your E-mail.</h2>
+{% elif status == -1 %}
+    <h2>Invalid Token. Contact Exchange Failed.</h2>
+{% else %}
+    <h2>The Participant {{ participant_received }} is already your Contact!</h2> 
+{% endif %}

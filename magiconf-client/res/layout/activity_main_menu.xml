@@ -1,0 +1,205 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainMenu" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingTop="50dp" >
+
+        <RelativeLayout
+            android:id="@+id/iconSet1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp" >
+
+            <RelativeLayout
+                android:id="@+id/agendaButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" >
+
+                <ImageView
+                    android:id="@+id/agendaButtonIcon"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_centerHorizontal="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:contentDescription="@string/agendaButtonDescription"
+                    android:src="@drawable/agenda_button" />
+
+                <TextView
+                    android:id="@+id/agendaButtonText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/agendaButtonIcon"
+                    android:layout_centerInParent="true"
+                    android:text="@string/agendaButtonText"
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/checkInButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_toRightOf="@+id/agendaButton" >
+
+                <ImageView
+                    android:id="@+id/checkInButtonIcon"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_centerHorizontal="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:contentDescription="@string/checkInButtonDescription"
+                    android:src="@drawable/checkin_button" />
+
+                <TextView
+                    android:id="@+id/checkInButtonText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/checkInButtonIcon"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/checkInButtonText"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/contactsButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_toRightOf="@+id/checkInButton" >
+
+                <ImageView
+                    android:id="@+id/contactsButtonIcon"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_centerHorizontal="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:contentDescription="@string/contactsButtonDescription"
+                    android:src="@drawable/contacts_button" />
+
+                <TextView
+                    android:id="@+id/contactsButtonText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/contactsButtonIcon"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/contactsButtonText"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iconSet1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:paddingTop="50dp" >
+
+            <RelativeLayout
+                android:id="@+id/pubsOfInterestButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" >
+
+                <ImageView
+                    android:id="@+id/pubsOfInterestButtonIcon"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_centerHorizontal="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:contentDescription="@string/pubsOfInterestButtonDescription"
+                    android:src="@drawable/favpub_button" />
+
+                <TextView
+                    android:id="@+id/pubsOfInterestButtonText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pubsOfInterestButtonIcon"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/pubsOfInterestButtonText"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/AuthorsAndKeynotesButton"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_toRightOf="@+id/pubsOfInterestButton" >
+
+                <ImageView
+                    android:id="@+id/AuthorsAndKeynotesButtonIcon"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/AuthorsAndKeynotesButtonDescription"
+                    android:src="@drawable/author_keynote_button" />
+
+                <TextView
+                    android:id="@+id/AuthorsAndKeynotesButtonText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/AuthorsAndKeynotesButtonIcon"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/AuthorsAndKeynotesButtonText"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/informationsButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_toRightOf="@+id/AuthorsAndKeynotesButton" >
+
+                <ImageView
+                    android:id="@+id/informationsButtonIcon"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/informationsButtonDescription"
+                    android:src="@drawable/info_button" />
+
+                <TextView
+                    android:id="@+id/informationsButtonText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/informationsButtonIcon"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/informationsButtonText"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+           android:paddingTop= "2.0dp"
+    android:paddingBottom= "2.0dp">
+
+    <TextView
+    	  android:id="@+id/publication_title"
+    	  style="@android:style/TextAppearance.Medium"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content" 
+          android:layout_weight="1"
+          android:textIsSelectable="false"
+		  android:paddingLeft="4.4dp" />
+    
+
+    <ImageView
+        android:id="@+id/pub_add_fav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="right|center_vertical"
+        android:contentDescription="@string/author_pub_add_fav_icon"
+        android:clickable="true" />
+</LinearLayout>

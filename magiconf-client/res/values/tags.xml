@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item name="tag_in_agenda" type="id">1</item>
+    <item name="tag_event_id" type="id">2</item>
+    <item name="menu_add_agenda" type="id">3</item>
+    <item name="menu_remove_agenda" type="id">4</item>
+
+</resources>

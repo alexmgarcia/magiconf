@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="session_not_agenda">#127990</color>
+    <color name="session_in_agenda">#0e5767</color>
+    <color name="day_button_not_selected">#127990</color>
+    <color name="day_button_selected">#0e5767</color>
+
+</resources>

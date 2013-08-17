@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingTop= "2.0dp"
+    android:paddingBottom= "2.0dp" >
+
+    <TextView
+    	  android:id="@+id/article_title"
+    	  style="@android:style/TextAppearance.Medium"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" 
+          android:textIsSelectable="false"
+		  android:paddingLeft="4.4dp" />
+
+</LinearLayout>

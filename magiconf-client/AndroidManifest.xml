@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.magiconf_client"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" >
+    </uses-permission>
+
+    <permission
+        android:name="com.example.magiconf_client.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.magiconf_client.permission.C2D_MESSAGE" />
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/small_logo"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo" >
+        <receiver
+            android:name="utils.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.example.magiconf_client" />
+            </intent-filter>
+        </receiver>
+        
+        <receiver 
+            android:name="utils.NetworkChangeReceiver"
+            android:label="NetworkChangeReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+		</receiver>
+        <activity
+            android:name="com.example.magiconf_client.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.MainMenu"
+            android:label="@string/app_name"
+            android:theme="@style/CustomTheme" >
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".GlobalSearchResults" />
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.AgendaOldActivity"
+            android:label="@string/app_name" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.magiconf_client.MainMenu" />
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.CheckInActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.magiconf_client.MainMenu" />
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.EventActivity"
+            android:label="@string/title_activity_social_event" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.magiconf_client.AgendaActivity" />
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.ContactsActivity"
+            android:label="@string/title_activity_contacts" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.magiconf_client.MainMenu" />
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".ContactsSearchResults" />
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.ContactsSearchResults"
+            android:label="@string/title_search_results_menu" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.TalkSessionActivity"
+            android:label="@string/title_activity_talk_session" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.magiconf_client.AgendaActivity" />
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.PostersSessionActivity"
+            android:label="@string/title_activity_poster_session" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.magiconf_client.AgendaActivity" />
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.KeynoteSessionActivity"
+            android:label="@string/title_activity_keynote_session"
+            android:parentActivityName="com.example.magiconf_client.AgendaOldActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.magiconf_client.AgendaActivity" />
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.KeynoteSpeakerActivity"
+            android:label="@string/title_activity_keynote_speaker" >
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.ArticleActivity"
+            android:label="@string/title_activity_article" >
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.PosterActivity"
+            android:label="@string/title_activity_poster" >
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.AuthorsAndKeynoteSpeakersActivity"
+            android:label="@string/title_activity_authors_keynotes" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.magiconf_client.AgendaActivity" />
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".AuthorsAndKeynotesSearchResults" />
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.AuthorsAndKeynotesSearchResults"
+            android:label="@string/title_search_results_menu" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.PublicationDetailsActivity"
+            android:label="@string/title_activity_publication_details" >
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.AuthorActivity"
+            android:label="@string/title_activity_author" >
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.FavoritePublicationsActivity"
+            android:label="@string/title_activity_favorite_publications" >
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".FavPublicationsSearchResults" />
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.FavPublicationsSearchResults"
+            android:label="@string/title_search_results_menu" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.InformationsMenu"
+            android:label="@string/title_informations_menu" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.magiconf_client.MainMenu" />
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.WorkshopActivity"
+            android:label="@string/title_activity_workshop" >
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.ConferenceActivity"
+            android:label="@string/title_conference_menu" >
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.MainAgendaActivity"
+            android:label="@string/title_activity_main_agenda" >
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.DeveloperActivity"
+            android:label="@string/app_version" >
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.AgendaActivity"
+            android:label="@string/title_activity_agenda" >
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".AgendaSearchResults" />
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.AgendaSearchResults"
+            android:label="@string/title_search_results_menu" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.CityActivity"
+            android:label="@string/title_sights_menu" >
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".SightsSearchResults" />
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.SightActivity"
+            android:label="@string/title_OneSight_menu" >
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.ContactActivity"
+            android:label="@string/contact_name" >
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.HotelActivity"
+            android:label="@string/title_OneSight_menu" >
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.RestaurantActivity"
+            android:label="@string/title_OneSight_menu" >
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.SponsorActivity"
+            android:label="@string/title_sponsors" >
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.ThanksActivity"
+            android:label="@string/title_thanks" >
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.MembersActivity"
+            android:label="@string/title_members_activity" >
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.MemberActivity"
+            android:label="@string/member_name" >
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.SightsSearchResults"
+            android:label="@string/title_search_results_menu" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.StartContactExchangeActivity"
+            android:label="@string/title_activity_start_contact_exchange"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.ContactExchangeActivity"
+            android:label="@string/title_activity_contact_exchange" >
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.NotificationsActivity"
+            android:label="@string/title_activity_notifications" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.magiconf_client.MainMenu" />
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.NotificationActivity"
+            android:label="@string/title_activity_notification" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.magiconf_client.NotificationsActivity" />
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.DialogActivity"
+            android:label="@string/title_activity_dialog"
+            android:theme="@style/Theme.Transparent" >
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.SendContactExchangeRequestActivity"
+            android:label="@string/title_activity_send_contact_exchange_request" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.magiconf_client.ContactExchangeActivity" />
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.SendEmailExchangeRequestActivity"
+            android:label="@string/title_activity_send_email_exchange_request" >
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.EditSocialNetworksActivity"
+            android:label="@string/title_activity_edit_social_networks" >
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.GlobalSearchResults"
+            android:label="@string/title_search_results_menu" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name="com.example.magiconf_client.AboutActivity"
+            android:label="@string/title_activity_about" >
+        </activity>
+    </application>
+
+</manifest>

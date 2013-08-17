@@ -1,0 +1,197 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AboutActivity" >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_horizontal" />
+
+    <TextView
+        android:id="@+id/version"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:gravity="center"
+        android:paddingTop="4.4dp"
+        android:text="@string/app_just_version" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/version" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/developed_by"
+                style="@android:style/TextAppearance.Small"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4.4dp"
+                android:text="@string/developed_by" />
+
+            <LinearLayout
+                android:id="@+id/first_row"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <RelativeLayout
+                    android:id="@+id/dev_alexandre_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingTop="13.2dp" >
+
+                    <ImageView
+                        android:id="@+id/alexandre_photo"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/alexandre" />
+
+                    <TextView
+                        android:id="@+id/alexandre_name"
+                        style="@android:style/TextAppearance.Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/alexandre_photo"
+                        android:paddingLeft="4.4dp"
+                        android:text="@string/dev_alexandre" />
+
+                    <TextView
+                        style="@android:style/TextAppearance.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/alexandre_name"
+                        android:layout_toRightOf="@id/alexandre_photo"
+                        android:paddingLeft="4.4dp"
+                        android:text="@string/dev_alexandre_email" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/dev_david_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingTop="13.2dp" >
+
+                    <ImageView
+                        android:id="@+id/david_photo"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/david" />
+
+                    <TextView
+                        android:id="@+id/david_name"
+                        style="@android:style/TextAppearance.Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/david_photo"
+                        android:paddingLeft="4.4dp"
+                        android:text="@string/dev_david" />
+
+                    <TextView
+                        style="@android:style/TextAppearance.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/david_name"
+                        android:layout_toRightOf="@id/david_photo"
+                        android:paddingLeft="4.4dp"
+                        android:text="@string/dev_david_email" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <RelativeLayout
+                    android:id="@+id/dev_farah_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingTop="13.2dp" >
+
+                    <ImageView
+                        android:id="@+id/farah_photo"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/farah" />
+
+                    <TextView
+                        android:id="@+id/farah_name"
+                        style="@android:style/TextAppearance.Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/farah_photo"
+                        android:paddingLeft="4.4dp"
+                        android:text="@string/dev_farah" />
+
+                    <TextView
+                        style="@android:style/TextAppearance.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/farah_name"
+                        android:layout_toRightOf="@id/farah_photo"
+                        android:paddingLeft="4.4dp"
+                        android:text="@string/dev_farah_email" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/dev_jose_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingTop="13.2dp" >
+
+                    <ImageView
+                        android:id="@+id/jose_photo"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:src="@drawable/jose" />
+
+                    <TextView
+                        android:id="@+id/jose_name"
+                        style="@android:style/TextAppearance.Medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/jose_photo"
+                        android:paddingLeft="4.4dp"
+                        android:text="@string/dev_jose" />
+
+                    <TextView
+                        style="@android:style/TextAppearance.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/jose_name"
+                        android:layout_toRightOf="@id/jose_photo"
+                        android:paddingLeft="4.4dp"
+                        android:text="@string/dev_jose_email" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

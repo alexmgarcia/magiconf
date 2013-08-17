@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+   <Button
+       android:id="@+id/buttonPostersSession"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignRight="@+id/buttonKeynoteSession"
+       android:layout_below="@+id/button1"
+       android:layout_marginTop="90dp"
+       android:onClick="showPosterSessionInformation"
+       android:text="@string/buttonshowpostersession" />
+
+   <Button
+       android:id="@+id/buttonKeynoteSession"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_below="@+id/button1"
+       android:layout_marginLeft="20dp"
+       android:layout_marginTop="28dp"
+       android:onClick="showKeynoteSessionInformation"
+       android:text="@string/button_show_keynote_session" />
+
+   <Button
+       android:id="@+id/buttonTalk"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentTop="true"
+       android:layout_alignRight="@+id/buttonKeynoteSession"
+       android:layout_marginTop="18dp"
+       android:onClick="showTalkInformation"
+       android:text="@string/button_show_talk" />
+
+   <Button
+       android:id="@+id/button1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignBaseline="@+id/buttonTalk"
+       android:layout_alignBottom="@+id/buttonTalk"
+       android:layout_alignLeft="@+id/buttonKeynoteSession"
+       android:onClick="showEventInformation"
+       android:text="@string/button_show_event1" />
+
+   <Button
+       android:id="@+id/button2"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/buttonPostersSession"
+       android:layout_below="@+id/buttonPostersSession"
+       android:layout_marginTop="100dp"
+       android:onClick="showNotPresentedPublicationInformation"
+       android:text="Not presented pub" />
+
+   <Button
+       android:id="@+id/Button01"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/buttonPostersSession"
+       android:layout_below="@+id/buttonPostersSession"
+       android:layout_marginTop="16dp"
+       android:onClick="showWorkshop"
+       android:text="Workshop" />
+   
+</RelativeLayout>

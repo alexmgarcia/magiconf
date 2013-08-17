@@ -1,0 +1,192 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InformationsMenu" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingTop="100dp" >
+
+        <RelativeLayout
+            android:id="@+id/iconSet1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp" >
+
+            <RelativeLayout
+                android:id="@+id/conferenceButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" >
+
+                <ImageView
+                    android:id="@+id/conferenceButtonIcon"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/conferenceButtonDescription"
+                    android:src="@drawable/conference_button" />
+
+                <TextView
+                    android:id="@+id/conferenceButtonText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/conferenceButtonIcon"
+                    android:layout_centerInParent="true"
+                    android:text="@string/conferenceButtonText"
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/organizationButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_toRightOf="@+id/conferenceButton" >
+
+                <ImageView
+                    android:id="@+id/organizationButtonIcon"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/organizationButtonDescription"
+                    android:src="@drawable/organization_button" />
+
+                <TextView
+                    android:id="@+id/organizationButtonText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/organizationButtonIcon"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/organizationButtonText"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sponsorsButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_toRightOf="@+id/organizationButton" >
+
+                <ImageView
+                    android:id="@+id/sponsorsButtonIcon"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/sponsorsButtonDescription"
+                    android:src="@drawable/sponsors_button" />
+
+                <TextView
+                    android:id="@+id/sponsorsButtonText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sponsorsButtonIcon"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/sponsorsButtonText"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iconSet1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:paddingTop="50dp" >
+
+            <RelativeLayout
+                android:id="@+id/sightsButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" >
+
+                <ImageView
+                    android:id="@+id/sightsButtonIcon"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/sightsButtonDescription"
+                    android:src="@drawable/sights_button" />
+
+                <TextView
+                    android:id="@+id/sightsButtonText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sightsButtonIcon"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/sightsButtonText"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/aboutButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_toRightOf="@+id/sightsButton" >
+
+                <ImageView
+                    android:id="@+id/aboutButtonIcon"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/aboutButtonDescription"
+                    android:src="@drawable/about_button" />
+
+                <TextView
+                    android:id="@+id/aboutButtonText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/aboutButtonIcon"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/aboutButtonText"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/thanksButton"
+                android:layout_width="105dp"
+                android:layout_height="100dp"
+                android:layout_toRightOf="@+id/aboutButton" >
+
+                <ImageView
+                    android:id="@+id/thanksButtonIcon"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/thanksButtonDescription"
+                    android:src="@drawable/thanks_button" />
+
+                <TextView
+                    android:id="@+id/thanksButtonText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/thanksButtonIcon"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/thanksButtonText"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
