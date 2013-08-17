@@ -1,4 +1,3 @@
-
 package utils;
 
 import java.util.Locale;
@@ -69,7 +68,7 @@ public class ValuesHelper {
 		AUTHOR_CONTACT, KEYNOTE_CONTACT, PARTICIPANT_CONTACT
 	}
 
-	public static boolean debugDownload = true;
+	public static boolean debugDownload = false;
 
 	/**
 	 * Converts DP to PX
